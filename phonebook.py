@@ -119,9 +119,8 @@ def copy_contact():
         num_contact=input(f"Введите номер контакта (всего на данный момент {len(contact_list)} контактов): ")
 
     with open("copybook.txt", "a", encoding="UTF-8") as file:
-        file.write(contact_list[int(num_contact)-1])
-        # for nn, contact in enumerate(contact_list, 1):
-        #     print(nn,contact)
+        file.write(contact_list[int(num_contact)-1]+"\n\n")
+
 
 
 def interface():
